@@ -3,39 +3,44 @@ window.addEventListener("DOMContentLoaded", function () {
     var carousel = document.querySelector(".carousel");
     var slides = document.querySelectorAll(".slide");
   
-    var scrollDistance = 250; 
+    var currentIndex = 0;
+    var slideWidth = 0;
+    var numSlides = slides.length;
   
-    
-    carousel.style.width = slides.length * scrollDistance + "px";
+    // Set the initial position of the carousel
+    carousel.style.transform = "translateX(0)";
   
-    
-    carouselContainer.addEventListener("wheel", scrollCarousel);
-    carouselContainer.addEventListener("touchstart", handleTouchStart);
-    carouselContainer.addEventListener("touchmove", handleTouchMove);
-    carouselContainer.addEventListener("touchend", handleTouchEnd);
-  
-    var touchStartX;
-    var touchEndX;
-  
-    function scrollCarousel(event) {
-      event.preventDefault();
-  
-      var scrollAmount = event.deltaY > 0 ? scrollDistance : -scrollDistance;
-      carousel.scrollLeft += scrollAmount;
+    // Calculate the slide width based on the container size
+    function calculateSlideWidth() {
+      slideWidth = carouselContainer.offsetWidth;
+      slides.forEach(function (slide) {
+        slide.style.width = slideWidth + "px";
+      });
     }
   
-    function handleTouchStart(event) {
-      touchStartX = event.touches[0].clientX;
+    // Recalculate slide width on window resize
+    window.addEventListener("resize", calculateSlideWidth);
+  
+    // Add event listeners for arrow navigation
+    var prevArrow = document.querySelector(".arrow.prev");
+    var nextArrow = document.querySelector(".arrow.next");
+    prevArrow.addEventListener("click", navigateCarousel.bind(null, -1));
+    nextArrow.addEventListener("click", navigateCarousel.bind(null, 1));
+  
+    function navigateCarousel(direction) {
+      currentIndex += direction;
+  
+      if (currentIndex < 0) {
+        currentIndex = numSlides - 1;
+      } else if (currentIndex >= numSlides) {
+        currentIndex = 0;
+      }
+  
+      var translateX = -currentIndex * slideWidth;
+      carousel.style.transform = "translateX(" + translateX + "px)";
     }
   
-    function handleTouchMove(event) {
-      touchEndX = event.touches[0].clientX;
-    }
-  
-    function handleTouchEnd(event) {
-      var touchDistance = touchEndX - touchStartX;
-      var scrollAmount = touchDistance > 0 ? scrollDistance : -scrollDistance;
-      carousel.scrollLeft += scrollAmount;
-    }
+    // Initial calculation of slide width
+    calculateSlideWidth();
   });
   
