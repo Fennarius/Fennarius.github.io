@@ -1,19 +1,37 @@
 /* CSS styles for the navigation bar */
+body {
+  background-color: #F4E4BA;
+  margin: 0;
+  padding: 0;
+}
+
+.opening-container{
+  background-color: #fff;
+  padding: 20px; 
+}
+
 .container {
   display: flex;
   justify-content: center;
 }
+
+h1 {
+  text-align: center;
+  color: #3A6EA5;
+}
+
 
 ul.navbar {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #f9f9f9;
+
 }
 
 ul.navbar li {
   float: left;
+  font-size: larger;
 }
 
 ul.navbar li a {
@@ -25,7 +43,8 @@ ul.navbar li a {
 }
 
 ul.navbar li a:hover {
-  background-color: #ddd;
+  background-color: #3A6EA5;
+  color: #fff
 }
 
 /* CSS styles for the carousel */
