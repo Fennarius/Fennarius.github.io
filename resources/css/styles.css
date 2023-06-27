@@ -28,13 +28,13 @@
     background-color: #ddd;
   }
   
-  /* CSS styles for the image */
-  .image-container {
+  /* CSS styles for the slideshow */
+  .slideshow-container {
     text-align: center;
     margin-top: 20px;
   }
   
-  .image-container img {
+  .slideshow-container img {
     max-width: 100%;
     height: auto;
   }
