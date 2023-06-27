@@ -1,47 +1,63 @@
 /* CSS styles for the navigation bar */
-  .container {
-    display: flex;
-    justify-content: center;
-  }
-  
-  ul.navbar {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #f9f9f9;
-  }
-  
-  ul.navbar li {
-    float: left;
-    font-size: large;
-  }
-  
-  ul.navbar li a {
-    display: block;
-    color: #333;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  ul.navbar li a:hover {
-    background-color: #ddd;
-  }
-  
-/* CSS styles for the slideshow */
-  .slideshow-container {
-    text-align: center;
-    margin-top: 20px;
-    max-width: 600px; /* Adjust the maximum width as needed */
-    margin-left: auto;
-    margin-right: auto;
-    overflow: hidden;
-  }
-  
-  .slideshow-container img {
-    max-width: 100%;
-    height: auto;
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
-  }
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+ul.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #f9f9f9;
+}
+
+ul.navbar li {
+  float: center;
+  font-size: large;
+}
+
+ul.navbar li a {
+  display: block;
+  color: #333;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.navbar li a:hover {
+  background-color: #ddd;
+}
+
+/* CSS styles for the carousel */
+.carousel-container {
+  overflow-x: scroll;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  white-space: nowrap;
+}
+
+.carousel {
+  display: flex;
+}
+
+.slide {
+  flex: 0 0 100%;
+  padding: 10px;
+  text-align: center;
+}
+
+.slide img {
+  max-width: 100%;
+  height: auto;
+}
+
+.slide-content {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  padding: 10px;
+}
+
+.slide-content h2, .slide-content p {
+  margin: 0;
+}
