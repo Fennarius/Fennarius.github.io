@@ -14,6 +14,7 @@
   
   ul.navbar li {
     float: left;
+    font-size: medium;
   }
   
   ul.navbar li a {

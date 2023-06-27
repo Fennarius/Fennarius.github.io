@@ -1,5 +1,5 @@
 window.addEventListener("DOMContentLoaded", function () {
-    var images = ["resources/VisitFlorida.jpg", "resources/artisticFlorida.jpg", "resources/UCFFlorida.jpg", "resources/disneyFlorida.jpg"]; 
+    var images = ["VisitFlorida.jpg", "artisticFlorida.jpg", "UCFFlorida.jpg", "disneyFlorida.jpg"]; 
     var currentIndex = 0;
     var slideshowImage = document.getElementById("slideshow-image");
   
