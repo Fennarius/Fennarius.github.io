@@ -1,5 +1,5 @@
 /* CSS styles for the navigation bar */
-.container {
+  .container {
     display: flex;
     justify-content: center;
   }
@@ -29,13 +29,19 @@
     background-color: #ddd;
   }
   
-  /* CSS styles for the slideshow */
+/* CSS styles for the slideshow */
   .slideshow-container {
     text-align: center;
     margin-top: 20px;
+    max-width: 600px; /* Adjust the maximum width as needed */
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
   }
   
   .slideshow-container img {
     max-width: 100%;
     height: auto;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
   }
