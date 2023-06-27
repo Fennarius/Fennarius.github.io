@@ -1,5 +1,10 @@
 /* CSS styles for the navigation bar */
-ul.navbar {
+.container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  ul.navbar {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -8,7 +13,7 @@ ul.navbar {
   }
   
   ul.navbar li {
-    float: center;
+    float: left;
   }
   
   ul.navbar li a {
@@ -21,4 +26,15 @@ ul.navbar {
   
   ul.navbar li a:hover {
     background-color: #ddd;
+  }
+  
+  /* CSS styles for the image */
+  .image-container {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .image-container img {
+    max-width: 100%;
+    height: auto;
   }
