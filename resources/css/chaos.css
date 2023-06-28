@@ -200,6 +200,14 @@ hr{
 
 /* Alisson's Gallery */
 
+.gallery-content p{
+    font-size: 20px;
+}
+
+.gallery h2{
+    font-size: 36px;
+}
+
 .gallery-container {
     text-align: center;
 }
