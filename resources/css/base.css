@@ -1,0 +1,159 @@
+body {
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+  font-family: 'Oswald'; 
+}
+  
+.opening-container {
+  background-color: #1c4587ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px; 
+}
+
+
+.opening-container .FBNLogo {
+  margin-right: 10px; 
+}
+
+.opening-container .FBNLogo img {
+  max-width: 250px; 
+  height: auto; 
+}
+
+
+.opening-container .MCTitle {
+  text-align: center;
+  font-size: 40px;
+  color: #fff;
+  padding-right: 200px;
+  flex-grow: 1;
+}
+
+/* CSS styles for the navigation bar */
+ul.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+}
+
+.navbar a {
+  display: block;
+  color: #e8bd45;
+  text-decoration: none;
+  padding: 25px;
+  font-size: 25px;
+}
+
+/* CSS styles for the carousel */
+.carousel-container {
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  flex: 0 0 100%;
+  padding: 10px;
+  text-align: center;
+  position: relative;
+}
+
+.slide img {
+  max-width: auto;
+  width: auto;
+  height: 500px;
+}
+
+.slide-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  padding: 10px;
+  opacity: 0.9; 
+}
+
+.slide-content3 {
+  position: absolute;
+  top: 77%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(232, 189, 69, 0.41);
+  color: #fff;
+  padding: 10px;
+  opacity: 0.9; 
+  width: 33.25%;
+  text-align: right;
+  z-index: 1;
+  font-size: 40px;
+}
+
+.slide-content h2, .slide-content p {
+  margin: 0;
+}
+
+.carousel-arrows {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+}
+
+.arrow {
+  position: absolute;
+  top: calc(50% - 25px);
+  width: 50px;
+  height: 50px;
+  background-color: #f9f9f9;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  color: #333;
+}
+
+.arrow.prev {
+  left: 10px;
+}
+
+.arrow.next {
+  right: 10px;
+}
+
+.arrow.prev:before {
+  content: "<";
+}
+
+.arrow.next:before {
+  content: ">";
+}
+
+/* Hide scrollbar */
+.carousel-container::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel-container {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
