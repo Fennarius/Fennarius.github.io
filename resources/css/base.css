@@ -13,7 +13,6 @@ body {
   padding: 20px; 
 }
 
-
 .opening-container .FBNLogo {
   margin-right: 10px; 
 }
@@ -22,7 +21,6 @@ body {
   max-width: 250px; 
   height: auto; 
 }
-
 
 .opening-container .MCTitle {
   text-align: center;
@@ -166,9 +164,11 @@ ul.navbar {
 .table {
   display: table;
   background: lightblue;
+  background-color: #f6f1ebff;
   border-collapse: collapse;
   padding: 0;
-  width:100%;
+  width: 100%;
+  margin: 10px;
 }
 .leftTable, .rightTable {
   border-collapse: collapse;
@@ -182,13 +182,55 @@ ul.navbar {
   padding: 20px 10px 20px 20px;
   text-align: center;
   border: 2px solid #3A6EA5;
+  margin-right: 0;
 }
 .rightTable {
   background: lightgreen;
   padding: 20px 20px 20px 10px;
-  
+  margin-left: 0;
 }
+
 .nest {
   padding-bottom: 10px;
   border: 2px solid #3A6EA5;
+}
+
+/* Map */
+
+.toGo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px; 
+  background-color: #f6f1ebff;
+}
+
+.toGo h2{
+  color: #e27fc4ff;
+  font-size: 35px;
+}
+
+.Mapper{
+  display: flex;
+  justify-content: center;
+  background-color: #f6f1ebff;
+}
+
+.Mapper img{
+  max-width: 250px; 
+  height: auto; 
+}
+
+/* Footer */ 
+
+.footer {
+  background-color: #f6f1ebff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 14px;
+  color: #888;
 }
