@@ -30,7 +30,7 @@ body {
   flex-grow: 1;
 }
 
-/* CSS styles for the navigation bar */
+/* navigation bar */
 ul.navbar {
   list-style-type: none;
   margin: 0;
@@ -121,7 +121,7 @@ ul.navbar {
 
 .arrow {
   position: absolute;
-  top: calc(50% - 25px);
+  top: calc(50% - 33px);
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -217,7 +217,7 @@ ul.navbar {
 }
 
 .Mapper img{
-  max-width: 250px; 
+  max-width: 750px; 
   height: auto; 
 }
 

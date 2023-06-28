@@ -1,0 +1,296 @@
+body {
+    font-family: "Trebuchet MS", Arial, sans-serif;
+    background-color: #5c0909ff;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.opening-container {
+    position: fixed;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.csLogobar {
+    margin-right: auto; 
+}
+
+.nav-container{
+    margin-left: auto;
+    margin-right: 20px;
+}
+  
+.opening-container .csLogobar img {
+    max-width: 350px; 
+    height: auto; 
+}  
+
+/* navigation bar */
+ul.navbar {
+    font-weight: bold;
+    text-transform: uppercase;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+  
+.navbar {
+    display: flex;
+    justify-content: right;
+}
+
+.navbar a{
+    display: block;
+    text-decoration: none;
+    padding: 5px;
+    font-size: 15px;
+    color: #fff;
+}
+
+ul.navbar li {
+    position: relative;
+}
+
+/* center logo */
+
+.cscenterLogo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 75vh;
+    margin-bottom: -350px; 
+}
+
+.cscenterLogo img{
+    max-width: 800px;
+    height: auto;
+    z-index: 1;
+}
+  
+/* Roses */
+
+.Rosesup{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    overflow: hidden;
+    margin-top: -350px;
+}
+
+.Rosesup img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    opacity: 0.3;
+}
+
+.Rosesdown{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    overflow: hidden;
+    margin-top: -200px;
+    transform: scaleX(-1) scaleY(-1);
+}
+
+.Rosesdown img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    opacity: 0.3;
+}
+
+/* History Block */
+
+.history{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45vh; /* Adjust the height as needed */
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.history p{
+    text-align: center;
+    font-size: 18px;
+}
+
+/* Dress of the Night */
+
+.dressNight-section {
+    display: flex;
+}
+
+.weeklyNews-section{
+    display: flex;
+}
+
+.VIPseating-section{
+    display: flex;
+}
+  
+.leftdress {
+    flex: 1;
+    background-color: #5c0909ff; /* Adjust the color as needed */
+    padding: 20px;
+    position: relative;
+    color: #fff;
+    font-size: 22px;
+}
+  
+.leftdress hr {
+    margin-top: -10px;
+    margin-left: 50px;
+    border: none;
+    border-top: 3px solid #fff; /* Adjust the line color as needed */
+}
+
+.leftdress p{
+    margin-left: 50px;
+}
+
+.leftdress h2{
+    margin-left: 50px;
+}
+  
+.rightdress {
+    flex: 1;
+    position: relative;
+}
+  
+.rightdress img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+  
+.leftdress::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.weeklyNews-section .rightdress{
+    height: 800px;
+    overflow: hidden;
+}
+
+.weeklyNews-section .rightdress img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+hr{
+    border: none;
+    border-top: 8px solid #fff;  
+}
+
+/* Alisson's Gallery */
+
+.gallery-container {
+    text-align: center;
+}
+  
+.gallery-title {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+  
+.border-line {
+    width: 100px;
+    height: 4px;
+    background-color: #fff;
+    margin: 10px auto;
+}
+  
+.gallery-content {
+    margin: 20px auto;
+    max-width: 600px;
+    text-align: center;
+}
+  
+.signature {
+    position: relative;
+    display: inline-block;
+    margin-top: 20px;
+    text-align: right;
+    margin-left: 250px;
+}
+  
+.signature img {
+    width: 120px;
+    height: 120px;
+    align-items: right;
+}
+  
+.signature img:last-child {
+    position: absolute;
+    top: 5px;
+    left: 30px;
+    z-index: -1;
+    opacity: 0.5;
+}
+  
+  
+
+/* Contact */
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+  
+.contact {
+    margin-bottom: 20px;
+}
+
+.contact-photoa img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-left: 50px;
+
+}
+  
+.contact-photo img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+  
+.contact-details {
+    text-align: center;
+}
+  
+  
+
+/* footer */
+
+.footer{
+    text-align: center;
+}
+
+.footer img {
+    max-width: 350px; 
+    height: auto; 
+}
