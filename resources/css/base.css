@@ -160,3 +160,35 @@ ul.navbar {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
+
+/* News */
+
+.table {
+  display: table;
+  background: lightblue;
+  border-collapse: collapse;
+  padding: 0;
+  width:100%;
+}
+.leftTable, .rightTable {
+  border-collapse: collapse;
+  display: table-cell;
+  margin: 0;
+  padding: 0;
+  vertical-align: top;
+}
+.leftTable {
+  background: pink;
+  padding: 20px 10px 20px 20px;
+  text-align: center;
+  border: 2px solid #3A6EA5;
+}
+.rightTable {
+  background: lightgreen;
+  padding: 20px 20px 20px 10px;
+  
+}
+.nest {
+  padding-bottom: 10px;
+  border: 2px solid #3A6EA5;
+}
