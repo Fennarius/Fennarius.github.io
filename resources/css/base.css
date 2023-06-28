@@ -1,5 +1,5 @@
 body {
-  background-color: #fff;
+  background-color: #f6f1ebff;
   margin: 0;
   padding: 0;
   font-family: 'Oswald'; 
@@ -43,7 +43,7 @@ ul.navbar {
 .navbar {
   display: flex;
   justify-content: center;
-  background-color: #fff;
+  background-color: #f6f1ebff;
 }
 
 .navbar a {
@@ -75,7 +75,7 @@ ul.navbar {
 }
 
 .slide img {
-  display: block;
+
   max-width: auto;
   width: auto;
   height: 500px;
@@ -86,15 +86,32 @@ ul.navbar {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: #e89845ff;
   color: #fff;
   padding: 10px;
-  opacity: 0.9; 
+  opacity: 0.9;
+  width: 100%;
 }
 
 
 .slide-content h2, .slide-content p {
   margin: 0;
+}
+
+.s0 {
+  background-color: #e27fc4ff;
+}
+
+.s1{
+  background-color: #e89845ff;
+}
+
+.s2{
+  background-color: #e8bd45ff;
+}
+
+.s3{
+  background-color: #1c4587ff;
 }
 
 .carousel-arrows {
@@ -109,13 +126,12 @@ ul.navbar {
   top: calc(50% - 25px);
   width: 50px;
   height: 50px;
-  background-color: #f9f9f9;
   border-radius: 50%;
   cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 24px;
+  font-size: 50px;
   color: #333;
 }
 
