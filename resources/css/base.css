@@ -75,6 +75,7 @@ ul.navbar {
 }
 
 .slide img {
+  display: block;
   max-width: auto;
   width: auto;
   height: 500px;
@@ -91,20 +92,6 @@ ul.navbar {
   opacity: 0.9; 
 }
 
-.slide-content3 {
-  position: absolute;
-  top: 77%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: rgba(232, 189, 69, 0.41);
-  color: #fff;
-  padding: 10px;
-  opacity: 0.9; 
-  width: 33.25%;
-  text-align: right;
-  z-index: 1;
-  font-size: 40px;
-}
 
 .slide-content h2, .slide-content p {
   margin: 0;
